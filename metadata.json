@@ -1,0 +1,7 @@
+{
+  "name": "Laila Fernanda - Mis 15 Años",
+  "description": "Invitación mágica y elegante para los 15 años de Laila Fernanda Arias Alzamora, inspirada en destellos estelares y elegancia nocturna.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

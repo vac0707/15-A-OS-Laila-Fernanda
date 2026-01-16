@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laila Fernanda - Mis 15 Años</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-princess { font-family: 'Great Vibes', cursive; }
+        .font-title { font-family: 'Playfair Display', serif; }
+        .font-header { font-family: 'Cinzel Decorative', serif; }
+        .font-body { font-family: 'Montserrat', sans-serif; }
+        
+        @keyframes sparkle {
+          0%, 100% { opacity: 0; transform: scale(0); }
+          50% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 10px #fcd34d); }
+        }
+        .sparkle {
+          animation: sparkle 3s infinite;
+        }
+
+        @keyframes float-particles {
+          0% { transform: translateY(0) translateX(0); opacity: 0; }
+          50% { opacity: 0.8; }
+          100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+        }
+        .particle {
+          position: absolute;
+          background: white;
+          border-radius: 50%;
+          pointer-events: none;
+          animation: float-particles 10s linear infinite;
+        }
+
+        @keyframes magic-aura {
+          0% { transform: scale(1); filter: blur(30px); opacity: 0.3; }
+          50% { transform: scale(1.2); filter: blur(50px); opacity: 0.5; }
+          100% { transform: scale(1); filter: blur(30px); opacity: 0.3; }
+        }
+        .magic-aura {
+          animation: magic-aura 10s infinite ease-in-out;
+        }
+
+        .diffused-edges {
+          mask-image: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 90%);
+          -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 90%);
+        }
+
+        @keyframes shimmer-text {
+          0% { background-position: -200% center; }
+          100% { background-position: 200% center; }
+        }
+        .shimmer-text {
+          background: linear-gradient(90deg, #064e3b 0%, #059669 25%, #fcd34d 50%, #059669 75%, #064e3b 100%);
+          background-size: 200% auto;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          animation: shimmer-text 8s linear infinite;
+          padding: 0.2em 0.1em; 
+          display: inline-block;
+        }
+
+        .gold-shimmer {
+          background: linear-gradient(90deg, #bf953f, #fcf6ba, #b38728, #fcf6ba, #aa771c);
+          background-size: 200% auto;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          animation: shimmer-text 4s linear infinite;
+          display: inline-block;
+          text-shadow: 0 0 15px rgba(252, 211, 77, 0.2);
+        }
+
+        .transition-magical {
+          transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .bokeh-bg {
+          background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 80%);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#f8faf9] font-body overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
