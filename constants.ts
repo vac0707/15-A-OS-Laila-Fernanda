@@ -5,7 +5,7 @@ export const CAROUSEL_IMAGES = [
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325889/F01_frehct.png",
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325890/F07_rrlvx7.png",
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325890/F05_rp4rhn.png",
-  "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325890/F03_lxdkki.png",
+ // "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325890/F03_lxdkki.png",
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325890/F02_rulauk.png",
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325891/F04_wemnde.png",
   "https://res.cloudinary.com/dcnynnstm/image/upload/v1768325892/F08_htajpx.png"
